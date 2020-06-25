@@ -7,11 +7,11 @@ Insipired by this [Reddit Post](https://www.reddit.com/r/shopify/comments/e2pmb8
 
 ## Instructions:
 
-    * Install Tampermonkey
-    * Click "Dashboard" in the menu dropdown the "+" tab, paste the code below
-    * Change the //@match to your store's URL and change the link on line 44 which has windows.location.replace to your store's data as well. 
-    * Open the chrome console, create this variable which contains your data. 
-    '''
+* Install Tampermonkey
+* Click "Dashboard" in the menu dropdown the "+" tab, paste the code below
+* Change the //@match to your store's URL and change the link on line 44 which has windows.location.replace to your store's data as well. 
+* Open the chrome console, create this variable which contains your data. 
+'''
       var cards = [
           {
             "code": "CODE1GOESHERE",
@@ -22,10 +22,13 @@ Insipired by this [Reddit Post](https://www.reddit.com/r/shopify/comments/e2pmb8
             "amount": 20.00
           }];
       
-    '''
+'''
     
-    * Then, save it to localStorage : ''' localStorage.setItem('cards',JSON.stringify(cards)); '''
-    * Click the Tampermonkey icon to enable or disable the script. Use the javascript console to monitor progress.
-    * Finally , head to your store's /admin/gift_cards/new . The script should start creating cards then. 
+* Then, save it to localStorage : 
+''' 
+   localStorage.setItem('cards',JSON.stringify(cards)); 
+'''
+* Click the Tampermonkey icon to enable or disable the script. Use the javascript console to monitor progress.
+* Finally , head to your store's /admin/gift_cards/new . The script should start creating cards then. 
     
-    Tested and worked for 17000+ cards. 
+Tested and worked for 17000+ cards. 
